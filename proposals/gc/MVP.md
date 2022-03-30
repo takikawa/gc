@@ -701,7 +701,7 @@ This extends the [encodings](https://github.com/WebAssembly/function-references/
 | -0x14  | `(ref null ht)` | `ht : heaptype (s33)` | from funcref proposal |
 | -0x15  | `(ref ht)`      | `ht : heaptype (s33)` | from funcref proposal |
 | -0x16  | `i31ref`        |            | shorthand |
-| -0x18  | `(rtt $t)`      | `i : typeidx` | shorthand |
+| -0x18  | `(rtt $t)`      | `$t : typeidx` | shorthand |
 | -0x19  | `dataref`       |            | shorthand |
 | -0x1a  | `arrayref`      |            | shorthand |
 
@@ -716,7 +716,7 @@ The opcode for heap types is encoded as an `s33`.
 | -0x11  | `any`           |            | from funcref proposal |
 | -0x13  | `eq`            |            | |
 | -0x16  | `i31`           |            | |
-| -0x18  | `(rtt i)`       | `i : typeidx` | |
+| -0x18  | `(rtt $t)`      | `$t : typeidx` | |
 | -0x19  | `data`          |            | |
 | -0x1a  | `array`         |            | |
 
