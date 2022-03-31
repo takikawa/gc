@@ -281,7 +281,7 @@ In the [existing rules](https://github.com/WebAssembly/function-references/propo
 * Type indices are subtypes if they either define [equivalent](#type-equivalence) types or a suitable (direct or indirect) subtype relation has been declared
   - `$t <: $t'`
     - if `$t = <ctxtype>` and `$t' = <ctxtype'>` and `<ctxtype> == <ctxtype'>`
-    - or `unroll($t) = sub $t1* $t'' $t2* strtype` and `$t'' <: $t`
+    - or `unroll($t) = sub $t1* $t'' $t2* strtype` and `$t'' <: $t'`
   - Note: This rule climbs the supertype hierarchy until an equivalent type has been found. Effectively, this means that subtyping is "nominal" modulo type canonicalisation.
 
 
